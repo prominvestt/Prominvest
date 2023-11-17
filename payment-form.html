@@ -1,10 +1,39 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Payment Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-$END$
+<div class="container">
+    <h1>Card Payment Form</h1>
+    <form id="paymentForm">
+        <label for="cardPan">Card PAN:</label>
+        <input type="text" id="cardPan" required>
+
+        <label for="cardExpiryDate">Card Expiry Date (MM/YY):</label>
+        <input type="text" id="cardExpiryDate" required>
+
+        <label for="cardholderName">Cardholder Name:</label>
+        <input type="text" id="cardholderName" required>
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" required>
+
+        <label for="bankAccountNumber">Bank Account Number:</label>
+        <input type="text" id="bankAccountNumber" required>
+
+        <label for="transactionAmount">Transaction Amount:</label>
+        <input type="text" id="transactionAmount" required>
+
+        <button type="button" onclick="processPayment()">Process Payment</button>
+    </form>
+</div>
+<script src="script.js"></script>
 </body>
 </html>

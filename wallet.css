@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    width: 1200px;
+    background-color: lightsalmon;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.balance-container {
+    background-color: lightgreen;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.balance-container p {
+    color: lightgray;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.balance-container a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+}
+
+.transaction-history a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    background-color: darkblue;
+    padding: 18px;
+    border-radius: 100px;
+}
+
+.main-balance-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.w-6{
+    width: 24px;
+    height: 24px
+}
+
+@media (max-width: 600px) {}
