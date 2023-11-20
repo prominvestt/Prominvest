@@ -6,39 +6,176 @@
     <title>Wallet</title>
 </head>
 <body>
-<div class="container">
-    <div class="main-balance-container">
-        <div class="balance-container">
-            <a href="#">Hide/Show balance</a>
-            <h2>$1,000.78</h2>
-            <p>Total balance in USD</p>
-        </div>
-
-        <div class="transaction-history">
-            <a href="#" >Transaction history</a>
-        </div>
+<div class="main-container">
+    <div class="home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+        </svg>
+        <h3 class="home-text">Home</h3>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+        </svg>
     </div>
 
-    <div>
-        <p><a href="#">Send</a></p>
-        <p><a href="#">Receive</a></p>
+    <div class="balance-container">
+        <h2>$2000.98</h2>
+        <p>Total balance in USD</p>
     </div>
 
-    <div>
-        <h3>Recent Transaction</h3>
-        <ul>
-            <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+    <div class="transaction-type">
+        <div class="transaction-items">
+            <div><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5" />
             </svg>
-                Received
-            </li>
-            <li>
+            </a>
+                <h3>Send</h3>
+            </div>
+            <div><a href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
                 </svg>
-                Sent
-            </li>
-        </ul>
+            </a>
+                <h3>Receive</h3>
+            </div>
+            <div><a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+            </a>
+                <h3>More</h3>
+            </div>
+        </div>
+    </div>
+        <div class="transactions">
+            <h2 class="transactions-text">Transactions</h2>
+            <div class="transaction-details">
+                <a href="#">
+                    <ul>
+                        <li>
+                            <div class="logo-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                            </svg>
+                        </div>
+                            <div class="main-details-text">
+                                <h4>Received Cash</h4>
+                                <p>Today</p>
+                            </div>
+
+                            <div class="transaction-price">
+                                <h4>$500.00</h4>
+                                <p>Purchased Materials</p>
+                            </div>
+                        </li>
+                    </ul>
+                </a>
+
+                <a href="#">
+                    <ul>
+                        <li>
+                            <div class="logo-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5" />
+                                </svg>
+                            </div>
+                            <div class="main-details-text">
+                                <h4>Transferred Cash</h4>
+                                <p>Yesterday</p>
+                            </div>
+
+                            <div class="transaction-price">
+                                <h4>$1500.00</h4>
+                                <p>For Materials</p>
+                            </div>
+                        </li>
+                    </ul>
+                </a>
+
+                <a href="#">
+                    <ul>
+                        <li>
+                            <div class="logo-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                                </svg>
+                            </div>
+                            <div class="main-details-text">
+                                <h4>Received Cash</h4>
+                                <p>Today</p>
+                            </div>
+
+                            <div class="transaction-price">
+                                <h4>$500.00</h4>
+                                <p>Purchased Materials</p>
+                            </div>
+                        </li>
+                    </ul>
+                </a>
+
+                <a href="#">
+                    <ul>
+                        <li>
+                            <div class="logo-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5" />
+                                </svg>
+                            </div>
+                            <div class="main-details-text">
+                                <h4>Transferred Cash</h4>
+                                <p>Yesterday</p>
+                            </div>
+
+                            <div class="transaction-price">
+                                <h4>$1500.00</h4>
+                                <p>For Materials</p>
+                            </div>
+                        </li>
+                    </ul>
+                </a>
+
+                <a href="#">
+                    <ul>
+                        <li>
+                            <div class="logo-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                                </svg>
+                            </div>
+                            <div class="main-details-text">
+                                <h4>Received Cash</h4>
+                                <p>Today</p>
+                            </div>
+
+                            <div class="transaction-price">
+                                <h4>$500.00</h4>
+                                <p>Purchased Materials</p>
+                            </div>
+                        </li>
+                    </ul>
+                </a>
+
+                <a href="#">
+                    <ul>
+                        <li>
+                            <div class="logo-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5" />
+                                </svg>
+                            </div>
+                            <div class="main-details-text">
+                                <h4>Transferred Cash</h4>
+                                <p>Yesterday</p>
+                            </div>
+
+                            <div class="transaction-price">
+                                <h4>$1500.00</h4>
+                                <p>For Materials</p>
+                            </div>
+                        </li>
+                    </ul>
+                </a>
+            </div>
+        </div>
     </div>
 </div>
 </body>

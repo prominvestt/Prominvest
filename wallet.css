@@ -8,53 +8,212 @@ body {
     font-family: sans-serif;
 }
 
-.container {
-    width: 1200px;
-    background-color: lightsalmon;
-    color: #fff;
+.main-container {
     margin: 0 auto;
-    text-align: center;
+    width: 1200px;
+    background-color: darkslateblue;
+    color: #fff;
+}
+
+.w-6 {
+    width: 64px;
+    height: 64px;
+    stroke: #ffffff;
+    background-color: lightslategrey;
+    border-radius: 50%;
+}
+
+.home {
     display: flex;
-    flex-direction: column;
-    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 64px;
+}
+
+.home-text {
+    font-size: 18px;
 }
 
 .balance-container {
-    background-color: lightgreen;
-    font-size: 1rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.balance-container h2{
+    font-size: 24px;
 }
 
 .balance-container p {
-    color: lightgray;
-    font-size: 14px;
+    color: lightslategrey;
+}
+
+.transaction-type {
+    background-color: lightsalmon;
+}
+
+.transaction-items {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+a {
+    display: inline-block;
+    width: 100%;
     text-decoration: none;
+    color: #ffffff;
 }
 
-.balance-container a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 12px;
+li {
+    list-style: none;
 }
 
-.transaction-history a{
-    text-decoration: none;
-    font-size: 18px;
-    color: #fff;
-    background-color: darkblue;
-    padding: 18px;
-    border-radius: 100px;
+@media (max-width: 600px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: sans-serif;
+    }
+
+    .main-container {
+        margin: 0 auto;
+        width: 1200px;
+        background-color: darkslateblue;
+        color: #fff;
+    }
+
+    .w-6 {
+        width: 64px;
+        height: 64px;
+        stroke: #ffffff;
+        background-color: lightslategrey;
+        border-radius: 50%;
+    }
+
+    .home {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 64px;
+    }
+
+    .home-text {
+        font-size: 18px;
+    }
+
+    .balance-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .balance-container h2{
+        font-size: 24px;
+    }
+
+    .balance-container p {
+        color: lightslategrey;
+    }
+
+    .transaction-type {
+        background-color: lightsalmon;
+    }
+
+    .transaction-items {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    a {
+        display: inline-block;
+        width: 100%;
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    li {
+        list-style: none;
+    }
 }
 
-.main-balance-container {
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
+@media (min-width: 600px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-.w-6{
-    width: 24px;
-    height: 24px
-}
+    body {
+        font-family: sans-serif;
+    }
 
-@media (max-width: 600px) {}
+    .main-container {
+        margin: 0 auto;
+        width: 1200px;
+        background-color: darkslateblue;
+        color: #fff;
+    }
+
+    .w-6 {
+        width: 64px;
+        height: 64px;
+        stroke: #ffffff;
+        background-color: lightslategrey;
+        border-radius: 50%;
+    }
+
+    .home {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 64px;
+    }
+
+    .home-text {
+        font-size: 18px;
+    }
+
+    .balance-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .balance-container h2{
+        font-size: 24px;
+    }
+
+    .balance-container p {
+        color: lightslategrey;
+    }
+
+    .transaction-type {
+        background-color: lightsalmon;
+    }
+
+    .transaction-items {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    a {
+        display: inline-block;
+        width: 100%;
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    li {
+        list-style: none;
+    }
+}
